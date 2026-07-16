@@ -354,3 +354,109 @@
 	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.002']
 	bpy.ops.object.delete(use_global=False, confirm=False)
 	bpy.ops.object.delete(use_global=False, confirm=False)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
+	bpy.context.object.rotation_euler[2] = -1.29765
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
+	bpy.ops.action.delete(confirm=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.action.delete(confirm=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.context.object.rotation_euler[2] = 0.0937169
+	bpy.context.object.rotation_euler[1] = -0
+	bpy.context.object.rotation_euler[0] = 0
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
+	bpy.context.object.rotation_euler[1] = 0.346274
+	bpy.context.object.rotation_euler[0] = -3.12383
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.context.region.active_panel_category = 'Animation'
+	bpy.context.region.active_panel_category = 'Animation'
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.extrude_region_move(MESH_OT_extrude_region={"use_normal_flip":False, "use_dissolve_ortho_edges":False, "mirror":False}, TRANSFORM_OT_translate={"value":(0, 0, 0), "orient_type":'GLOBAL', "orient_matrix":((0, 0, 0), (0, 0, 0), (0, 0, 0)), "orient_matrix_type":'GLOBAL', "constraint_axis":(False, False, False), "mirror":False, "use_proportional_edit":False, "proportional_edit_falloff":'SMOOTH', "proportional_size":1, "use_proportional_connected":False, "use_proportional_projected":False, "snap":False, "snap_elements":{'INCREMENT'}, "use_snap_project":False, "snap_target":'CLOSEST', "use_snap_self":True, "use_snap_edit":True, "use_snap_nonedit":True, "use_snap_selectable":False, "snap_point":(0, 0, 0), "snap_align":False, "snap_normal":(0, 0, 0), "gpencil_strokes":False, "cursor_transform":False, "texture_space":False, "remove_on_cancel":False, "use_duplicated_keyframes":False, "view2d_edge_pan":False, "release_confirm":False, "use_accurate":False, "use_automerge_and_split":False, "translate_origin":False})
+	bpy.ops.mesh.extrude_region_move(MESH_OT_extrude_region={"use_normal_flip":False, "use_dissolve_ortho_edges":False, "mirror":False}, TRANSFORM_OT_translate={"value":(0, 0, 0), "orient_type":'GLOBAL', "orient_matrix":((0, 0, 0), (0, 0, 0), (0, 0, 0)), "orient_matrix_type":'GLOBAL', "constraint_axis":(False, False, False), "mirror":False, "use_proportional_edit":False, "proportional_edit_falloff":'SMOOTH', "proportional_size":1, "use_proportional_connected":False, "use_proportional_projected":False, "snap":False, "snap_elements":{'INCREMENT'}, "use_snap_project":False, "snap_target":'CLOSEST', "use_snap_self":True, "use_snap_edit":True, "use_snap_nonedit":True, "use_snap_selectable":False, "snap_point":(0, 0, 0), "snap_align":False, "snap_normal":(0, 0, 0), "gpencil_strokes":False, "cursor_transform":False, "texture_space":False, "remove_on_cancel":False, "use_duplicated_keyframes":False, "view2d_edge_pan":False, "release_confirm":False, "use_accurate":False, "use_automerge_and_split":False, "translate_origin":False})
+	bpy.ops.mesh.extrude_region_move(MESH_OT_extrude_region={"use_normal_flip":False, "use_dissolve_ortho_edges":False, "mirror":False}, TRANSFORM_OT_translate={"value":(0, 0, 0), "orient_type":'GLOBAL', "orient_matrix":((0, 0, 0), (0, 0, 0), (0, 0, 0)), "orient_matrix_type":'GLOBAL', "constraint_axis":(False, False, False), "mirror":False, "use_proportional_edit":False, "proportional_edit_falloff":'SMOOTH', "proportional_size":1, "use_proportional_connected":False, "use_proportional_projected":False, "snap":False, "snap_elements":{'INCREMENT'}, "use_snap_project":False, "snap_target":'CLOSEST', "use_snap_self":True, "use_snap_edit":True, "use_snap_nonedit":True, "use_snap_selectable":False, "snap_point":(0, 0, 0), "snap_align":False, "snap_normal":(0, 0, 0), "gpencil_strokes":False, "cursor_transform":False, "texture_space":False, "remove_on_cancel":False, "use_duplicated_keyframes":False, "view2d_edge_pan":False, "release_confirm":False, "use_accurate":False, "use_automerge_and_split":False, "translate_origin":False})
+	bpy.ops.mesh.extrude_region_move(MESH_OT_extrude_region={"use_normal_flip":False, "use_dissolve_ortho_edges":False, "mirror":False}, TRANSFORM_OT_translate={"value":(0, 0, 0), "orient_type":'GLOBAL', "orient_matrix":((0, 0, 0), (0, 0, 0), (0, 0, 0)), "orient_matrix_type":'GLOBAL', "constraint_axis":(False, False, False), "mirror":False, "use_proportional_edit":False, "proportional_edit_falloff":'SMOOTH', "proportional_size":1, "use_proportional_connected":False, "use_proportional_projected":False, "snap":False, "snap_elements":{'INCREMENT'}, "use_snap_project":False, "snap_target":'CLOSEST', "use_snap_self":True, "use_snap_edit":True, "use_snap_nonedit":True, "use_snap_selectable":False, "snap_point":(0, 0, 0), "snap_align":False, "snap_normal":(0, 0, 0), "gpencil_strokes":False, "cursor_transform":False, "texture_space":False, "remove_on_cancel":False, "use_duplicated_keyframes":False, "view2d_edge_pan":False, "release_confirm":False, "use_accurate":False, "use_automerge_and_split":False, "translate_origin":False})
+	bpy.ops.mesh.extrude_region_move(MESH_OT_extrude_region={"use_normal_flip":False, "use_dissolve_ortho_edges":False, "mirror":False}, TRANSFORM_OT_translate={"value":(0, 0, 0), "orient_type":'GLOBAL', "orient_matrix":((0, 0, 0), (0, 0, 0), (0, 0, 0)), "orient_matrix_type":'GLOBAL', "constraint_axis":(False, False, False), "mirror":False, "use_proportional_edit":False, "proportional_edit_falloff":'SMOOTH', "proportional_size":1, "use_proportional_connected":False, "use_proportional_projected":False, "snap":False, "snap_elements":{'INCREMENT'}, "use_snap_project":False, "snap_target":'CLOSEST', "use_snap_self":True, "use_snap_edit":True, "use_snap_nonedit":True, "use_snap_selectable":False, "snap_point":(0, 0, 0), "snap_align":False, "snap_normal":(0, 0, 0), "gpencil_strokes":False, "cursor_transform":False, "texture_space":False, "remove_on_cancel":False, "use_duplicated_keyframes":False, "view2d_edge_pan":False, "release_confirm":False, "use_accurate":False, "use_automerge_and_split":False, "translate_origin":False})
+	bpy.ops.transform.resize(value=(1.1661, 1.1661, 1.1661), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=True, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.mesh.extrude_region_move(MESH_OT_extrude_region={"use_normal_flip":False, "use_dissolve_ortho_edges":False, "mirror":False}, TRANSFORM_OT_translate={"value":(0, 0, 0), "orient_type":'GLOBAL', "orient_matrix":((0, 0, 0), (0, 0, 0), (0, 0, 0)), "orient_matrix_type":'GLOBAL', "constraint_axis":(False, False, False), "mirror":False, "use_proportional_edit":False, "proportional_edit_falloff":'SMOOTH', "proportional_size":1, "use_proportional_connected":False, "use_proportional_projected":False, "snap":False, "snap_elements":{'INCREMENT'}, "use_snap_project":False, "snap_target":'CLOSEST', "use_snap_self":True, "use_snap_edit":True, "use_snap_nonedit":True, "use_snap_selectable":False, "snap_point":(0, 0, 0), "snap_align":False, "snap_normal":(0, 0, 0), "gpencil_strokes":False, "cursor_transform":False, "texture_space":False, "remove_on_cancel":False, "use_duplicated_keyframes":False, "view2d_edge_pan":False, "release_confirm":False, "use_accurate":False, "use_automerge_and_split":False, "translate_origin":False})
+	bpy.ops.object.modifier_add(type='SOLIDIFY')
+	bpy.context.object.modifiers["Solidify"].thickness = 0.03
+	bpy.ops.object.editmode_toggle()
+	bpy.context.object.modifiers["Solidify"].thickness = 0.02
+	bpy.context.object.modifiers["Solidify"].thickness = 0.01
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.object.modifier_add(type='SOLIDIFY')
+	bpy.context.object.modifiers["Solidify"].thickness = 0.02
+	bpy.context.object.modifiers["Solidify"].thickness = 0.03
+	bpy.context.object.modifiers["Solidify"].thickness = 0.04
+	bpy.context.object.modifiers["Solidify"].thickness = 0.05
+	bpy.context.object.modifiers["Solidify"].thickness = 0.04
+	bpy.context.object.modifiers["Solidify"].thickness = 0.03
+	bpy.context.object.modifiers["Solidify"].thickness = 0.02
+	bpy.context.object.modifiers["Solidify"].thickness = 0.01
+	bpy.context.object.modifiers["Solidify"].use_rim = False
+	bpy.context.object.modifiers["Solidify"].use_rim = True
+	bpy.context.object.modifiers["Solidify"].solidify_mode = 'NON_MANIFOLD'
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
+	bpy.ops.object.modifier_add(type='SOLIDIFY')
+	bpy.context.object.modifiers["Solidify"].thickness = 0.02
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.modifier_remove(modifier="Solidify")
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
+	bpy.context.region.active_panel_category = 'Tool'
