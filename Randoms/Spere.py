@@ -230,3 +230,137 @@
 	bpy.context.region.active_panel_category = 'Tool'
 	bpy.context.region.active_panel_category = 'View'
 	bpy.context.region.active_panel_category = 'Tool'
+	bpy.context.region.active_panel_category = 'Tool'
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.context.object.modifiers["Mask"].threshold = 0.305572
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.002']
+	bpy.context.object.modifiers["Mask"].threshold = 0.370799
+	bpy.context.object.modifiers["Mask"].threshold = 0.353255
+	bpy.context.object.modifiers["Mask"].use_smooth = True
+	bpy.context.object.modifiers["Mask"].threshold = 0.48191
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.context.object.modifiers["Mask"].threshold = 0.393291
+	bpy.context.object.modifiers["Mask"].use_smooth = True
+	bpy.ops.transform.resize(value=(1.0609, 1.0609, 1.0609), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.context.object.modifiers["Mask"].threshold = 0.445922
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['ball']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['ball']
+	bpy.ops.object.modifier_add(type='SIMPLE_DEFORM')
+	bpy.context.object.modifiers["SimpleDeform"].angle = -0.652753
+	bpy.ops.object.modifier_remove(modifier="SimpleDeform")
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['ball']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['ball']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['ball']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['ball']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.context.scene.tool_settings.use_keyframe_insert_auto = False
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.action.delete(confirm=False)
+	bpy.ops.action.delete(confirm=False)
+	bpy.ops.transform.rotate(value=0.507208, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=False, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.anim.keyframe_insert()
+	bpy.ops.anim.keyframe_insert()
+	bpy.ops.transform.rotate(value=-0.785811, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.transform.transform(mode='TIME_TRANSLATE', value=(67.0875, 0, 0, 0), orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=True, snap_elements={'VERTEX'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.transform.transform(mode='TIME_TRANSLATE', value=(-90.4351, 0, 0, 0), orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=True, snap_elements={'VERTEX'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.action.copy()
+	bpy.ops.transform.transform(mode='TIME_TRANSLATE', value=(6.79741, 0, 0, 0), orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=True, snap_elements={'VERTEX'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.transform(mode='TIME_TRANSLATE', value=(-6.79741, 0, 0, 0), orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=True, snap_elements={'VERTEX'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.action.paste()
+	bpy.ops.transform.transform(mode='TIME_TRANSLATE', value=(14.4814, 0, 0, 0), orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=True, snap_elements={'VERTEX'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.transform(mode='TIME_TRANSLATE', value=(9.16172, 0, 0, 0), orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=True, snap_elements={'VERTEX'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.action.paste()
+	bpy.ops.action.paste()
+	bpy.ops.action.paste()
+	bpy.ops.action.paste()
+	bpy.ops.transform.rotate(value=-0.490427, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-0.764053, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-0.698591, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-0.802916, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-2.73828, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.transform.rotate(value=-0.442624, orient_axis='Z', orient_type='VIEW', orient_matrix=((0.359866, -0.933004, 9.76026e-07), (-0.116284, -0.0448505, 0.992203), (-0.925729, -0.357061, -0.124633)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.action.delete(confirm=False)
+	bpy.ops.anim.keyframe_insert()
+	bpy.ops.transform.rotate(value=0.378131, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.998896, -0.0469672, 4.94532e-07), (0.00591988, -0.125893, 0.992026), (-0.0465926, 0.990931, 0.126032)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.anim.keyframe_insert()
+	bpy.ops.transform.rotate(value=-1.09655, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.998896, -0.0469672, 4.94532e-07), (0.00591988, -0.125893, 0.992026), (-0.0465926, 0.990931, 0.126032)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.transform.rotate(value=-0.478333, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.998896, -0.0469672, 4.94532e-07), (0.00591988, -0.125893, 0.992026), (-0.0465926, 0.990931, 0.126032)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.action.delete(confirm=False)
+	bpy.ops.transform.rotate(value=-0.820326, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.998896, -0.0469672, 4.94532e-07), (0.00591988, -0.125893, 0.992026), (-0.0465926, 0.990931, 0.126032)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.anim.keyframe_insert()
+	bpy.ops.action.delete(confirm=False)
+	bpy.ops.anim.keyframe_insert()
+	bpy.ops.transform.rotate(value=-0.858811, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.998896, -0.0469672, 4.94532e-07), (0.00591988, -0.125893, 0.992026), (-0.0465926, 0.990931, 0.126032)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.002']
+	bpy.ops.transform.rotate(value=0.139114, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.998896, -0.0469672, 4.94532e-07), (0.00591988, -0.125893, 0.992026), (-0.0465926, 0.990931, 0.126032)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.action.delete(confirm=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.002']
+	bpy.ops.transform.rotate(value=0.230677, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.998896, -0.0469672, 4.94532e-07), (0.00591988, -0.125893, 0.992026), (-0.0465926, 0.990931, 0.126032)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.002']
+	bpy.ops.anim.keyframe_insert()
+	bpy.ops.anim.keyframe_insert()
+	bpy.ops.transform.rotate(value=-0.215559, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SMOOTH', proportional_size=1, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.002']
+	bpy.ops.anim.keyframe_insert()
