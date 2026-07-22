@@ -460,3 +460,7 @@
 	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Sphere.001']]
 	bpy.context.view_layer.objects.active = bpy.data.objects['Sphere.001']
 	bpy.context.region.active_panel_category = 'Tool'
+	bpy.context.region.active_panel_category = 'Item'
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['ball']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['ball']
