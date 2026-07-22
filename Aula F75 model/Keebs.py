@@ -2749,3 +2749,6 @@
 	bpy.context.object.data.energy = 382.7
 	bpy.context.object.data.exposure = 3.00885
 	bpy.context.region.active_panel_category = 'Tool'
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
