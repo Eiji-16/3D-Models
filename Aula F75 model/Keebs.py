@@ -3071,3 +3071,1138 @@
 	bpy.data.images["Render Result"].name = "Render Result"
 	bpy.ops.image.save_as(save_as_render=True, copy=True, filepath="//Previews\\Untitled.png", relative_path=True, show_multiview=False, use_multiview=False)
 	bpy.context.region.active_panel_category = 'Tool'
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.context.region.active_panel_category = 'Tool'
+	bpy.ops.object.delete(use_global=False, confirm=False)
+	bpy.ops.object.delete(use_global=False, confirm=False)
+	bpy.ops.mesh.primitive_cube_add(size=2, enter_editmode=False, align='WORLD', location=(0, 0, 0), scale=(1, 1, 1))
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.transform.resize(value=(0.282846, 0.282846, 0.282846), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.translate(value=(0, 0, 0.261397), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.resize(value=(13.5937, 13.5937, 13.5937), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=2, face_index=5)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=2)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=5)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=2)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(toggle=True, object_index=0, edge_index=2)
+	bpy.ops.mesh.loop_select(toggle=True, object_index=0, edge_index=5)
+	bpy.ops.mesh.loop_select(toggle=True, object_index=0, edge_index=8)
+	bpy.ops.transform.resize(value=(0.458812, 0.458812, 0.458812), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11, vert_index=5)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11, vert_index=5)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(delimit_edge_loop={'SHARP'}, object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(delimit_edge_loop={'INNER_CORNERS'}, object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(delimit_edge_loop={'NGONS'}, object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(delimit_edge_loop={'OUTER_CORNERS'}, object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=11)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=2)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=5)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=8)
+	bpy.ops.mesh.shortest_path_pick(edge_mode='SELECT', use_fill=False, index=19)
+	bpy.ops.mesh.shortest_path_pick(edge_mode='SELECT', use_fill=False, index=10)
+	bpy.ops.mesh.shortest_path_pick(edge_mode='SELECT', use_fill=False, index=13)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.delete(use_global=False, confirm=False)
+	bpy.ops.object.delete(use_global=False, confirm=False)
+	bpy.ops.mesh.primitive_cube_add(enter_editmode=False, align='WORLD', location=(0, 0, 0), scale=(1, 1, 1))
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.transform.translate(value=(0, 0, 0.967587), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.transform.resize(value=(71.4095, 71.4095, 71.4095), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.data.images["Poliigon_MetalPaintedMatte_7037_Preview1.png"].name = "Poliigon_MetalPaintedMatte_7037_Preview1.png"
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_rename()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.hide_collection(collection_index=3, extend=False)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.transform.resize(value=(-0.0211751, -0.0211751, -0.0211751), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.context. = True
+	bpy.context. = False
+	bpy.context. = False
+	bpy.context. = False
+	bpy.context. = True
+	bpy.context. = True
+	bpy.context. = False
+	bpy.context. = False
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in []]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.context. = True
+	bpy.context. = True
+	bpy.context. = False
+	bpy.ops.transform.vert_slide(value=0, direction=(-0.628639, -0.777697, 0), mirror=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False, correct_uv=True)
+	bpy.ops.transform.translate(value=(-0.0234375, -0.0183105, 0), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.sculpt.sculptmode_toggle()
+	bpy.ops.sculpt.sculptmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.material.new()
+	bpy.context.object.active_material = bpy.data.materials[-1]
+	bpy.data.materials["Material.013"].node_tree.nodes["Principled BSDF"].inputs[0].default_value = (0.8, 0.8, 0.8, 1)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.transform.translate(value=(-0, -0, -102.002), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.context. = False
+	bpy.context. = True
+	bpy.context. = True
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.data.materials["Material.013"].node_tree.nodes["Principled BSDF"].inputs[2].default_value = 0
+	bpy.data.materials["Material.013"].node_tree.nodes["Principled BSDF"].inputs[2].default_value = 0.935484
+	bpy.data.materials["Material.013"].node_tree.nodes["Principled BSDF"].inputs[2].default_value = 0.935484
+	bpy.data.materials["Material.013"].node_tree.nodes["Principled BSDF"].inputs[2].default_value = 0
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.delete()
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in []]
+	bpy.context.view_layer.objects.active = None
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.primitive_plane_add(size=2, enter_editmode=False, align='WORLD', location=(0, 0, 0), scale=(1, 1, 1))
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.ops.transform.translate(value=(-0, -0, -0.0310497), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.transform.translate(value=(0, 0, 0.00612715), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.extrude_region_move(MESH_OT_extrude_region={"use_normal_flip":False, "use_dissolve_ortho_edges":False, "mirror":False}, TRANSFORM_OT_translate={"value":(0, 0, 0), "orient_type":'GLOBAL', "orient_matrix":((0, 0, 0), (0, 0, 0), (0, 0, 0)), "orient_matrix_type":'GLOBAL', "constraint_axis":(False, False, False), "mirror":False, "use_proportional_edit":False, "proportional_edit_falloff":'SMOOTH', "proportional_size":1, "use_proportional_connected":False, "use_proportional_projected":False, "snap":False, "snap_elements":{'INCREMENT'}, "use_snap_project":False, "snap_target":'CLOSEST', "use_snap_self":True, "use_snap_edit":True, "use_snap_nonedit":True, "use_snap_selectable":False, "snap_point":(0, 0, 0), "snap_align":False, "snap_normal":(0, 0, 0), "gpencil_strokes":False, "cursor_transform":False, "texture_space":False, "remove_on_cancel":False, "use_duplicated_keyframes":False, "view2d_edge_pan":False, "release_confirm":False, "use_accurate":False, "use_automerge_and_split":False, "translate_origin":False})
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.extrude_region_move(MESH_OT_extrude_region={"use_normal_flip":False, "use_dissolve_ortho_edges":False, "mirror":False}, TRANSFORM_OT_translate={"value":(0, 0, 0), "orient_type":'GLOBAL', "orient_matrix":((0, 0, 0), (0, 0, 0), (0, 0, 0)), "orient_matrix_type":'GLOBAL', "constraint_axis":(False, False, False), "mirror":False, "use_proportional_edit":False, "proportional_edit_falloff":'SMOOTH', "proportional_size":1, "use_proportional_connected":False, "use_proportional_projected":False, "snap":False, "snap_elements":{'INCREMENT'}, "use_snap_project":False, "snap_target":'CLOSEST', "use_snap_self":True, "use_snap_edit":True, "use_snap_nonedit":True, "use_snap_selectable":False, "snap_point":(0, 0, 0), "snap_align":False, "snap_normal":(0, 0, 0), "gpencil_strokes":False, "cursor_transform":False, "texture_space":False, "remove_on_cancel":False, "use_duplicated_keyframes":False, "view2d_edge_pan":False, "release_confirm":False, "use_accurate":False, "use_automerge_and_split":False, "translate_origin":False})
+	bpy.ops.mesh.extrude_region_move(MESH_OT_extrude_region={"use_normal_flip":False, "use_dissolve_ortho_edges":False, "mirror":False}, TRANSFORM_OT_translate={"value":(0, 0, -0.0670836), "orient_type":'NORMAL', "orient_matrix":((0, -1, 0), (1, 0, -0), (0, 0, 1)), "orient_matrix_type":'NORMAL', "constraint_axis":(False, False, True), "mirror":False, "use_proportional_edit":False, "proportional_edit_falloff":'SPHERE', "proportional_size":0.0113382, "use_proportional_connected":False, "use_proportional_projected":False, "snap":False, "snap_elements":{'INCREMENT'}, "use_snap_project":False, "snap_target":'CLOSEST', "use_snap_self":True, "use_snap_edit":True, "use_snap_nonedit":True, "use_snap_selectable":False, "snap_point":(0, 0, 0), "snap_align":False, "snap_normal":(0, 0, 0), "gpencil_strokes":False, "cursor_transform":False, "texture_space":False, "remove_on_cancel":False, "use_duplicated_keyframes":False, "view2d_edge_pan":False, "release_confirm":False, "use_accurate":False, "use_automerge_and_split":False, "translate_origin":False})
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in []]
+	bpy.context.view_layer.objects.active = None
+	bpy.context. = True
+	bpy.context. = False
+	bpy.context. = True
+	bpy.context. = False
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.transform.rotate(value=-1.57101, orient_axis='Z', orient_type='VIEW', orient_matrix=((0.626521, -0.779404, 0), (0.178562, 0.143536, 0.973403), (-0.758674, -0.609857, 0.229101)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=0.634465, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.515913, -0.856641, 3.72529e-09), (0.115797, -0.0697387, 0.990822), (-0.848779, 0.511178, 0.135175)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.translate(value=(0, 0, 0.226985), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=0.436973, orient_axis='Z', orient_type='VIEW', orient_matrix=((0.68292, -0.730493, 1.49012e-08), (0.0981843, 0.0917902, 0.990926), (-0.723864, -0.676724, 0.134408)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-0.13572, orient_axis='Y', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, True, False), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=0.577427, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.translate(value=(-3.63798e-12, -0.00588993, -2.91038e-11), orient_type='VIEW', orient_matrix=((0.373921, -0.927461, -0), (-0.0191287, -0.00771204, 0.999787), (-0.927263, -0.373841, -0.0206248)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.translate(value=(0.00590991, -1.55862e-10, 1.8595e-09), orient_type='VIEW', orient_matrix=((0.523555, -0.851992, -0), (0.03906, 0.0240026, 0.998949), (-0.851096, -0.523004, 0.0458455)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=0.30079, orient_axis='Z', orient_type='VIEW', orient_matrix=((0.520567, -0.853821, 0), (0.0391436, 0.0238655, 0.998949), (-0.852923, -0.520019, 0.0458452)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-0.161114, orient_axis='Z', orient_type='VIEW', orient_matrix=((0.507691, -0.861539, 7.45058e-09), (0.214834, 0.126598, 0.968411), (-0.834324, -0.491653, 0.249361)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=6.7292, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-0.407307, orient_axis='Z', orient_type='VIEW', orient_matrix=((0.863974, -0.503537, -1.86264e-09), (0.0190988, 0.03277, 0.99928), (-0.503174, -0.863352, 0.0379294)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.ops.transform.translate(value=(-0.424954, -0.343024, 0.216555), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.transform.rotate(value=1.14687, orient_axis='Z', orient_type='VIEW', orient_matrix=((0.652585, -0.757715, 7.45058e-09), (0.158788, 0.136757, 0.977796), (-0.740891, -0.638095, 0.209561)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.context.region.active_panel_category = 'View'
+	bpy.context.region.active_panel_category = 'Item'
+	bpy.context.object.rotation_euler[0] = 0
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.context.region.active_panel_category = 'Item'
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.context.object.rotation_euler[1] = 0
+	bpy.context.region.active_panel_category = 'Item'
+	bpy.ops.transform.translate(value=(-0.134846, 0.0116182, 0.00436738), orient_type='VIEW', orient_matrix=((0.81515, -0.57925, -0), (0.402807, 0.566851, 0.718628), (-0.416265, -0.58579, 0.695395)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.ops.outliner.item_rename()
+	bpy.ops.outliner.collection_drop()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.anim.keyframe_insert()
+	bpy.ops.object.editmode_toggle()
+	bpy.context.scene.tool_settings.use_proportional_edit = True
+	bpy.ops.mesh.inset(thickness=0.0314195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0324195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0354195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0394195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0424195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0484195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0544195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0604195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0654195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0694195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0714195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0754195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0774195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0794195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0804195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0824195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0844195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0874195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0904195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0944195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.0994195, depth=0)
+	bpy.ops.mesh.inset(thickness=0.10242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.10642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.11142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.11542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.11942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.12242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.12542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.12942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.13642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.14742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.15742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.16942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.18342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.19442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.20542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.21342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.22342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.23242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.24042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.25342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.26342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.27342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.28342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.29642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.30942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.32142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.33142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.34342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.35242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.36042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.36842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.37842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.39042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.40342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.41642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.43342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.45042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.46442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.47642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.48842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.49942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.51242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.52442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.53842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.54942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.55942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.57042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.57942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.58842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.59942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.61042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.62142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.63442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.64542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.65542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.66542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.67442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.68342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.69242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.70342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.71342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.72442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.73442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.74442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.75442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.76442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.77442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.78442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.79342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.79942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.80542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.81142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.81642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.82142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.82742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.83442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.84142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.84942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.85542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.86042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.86242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.86542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.86742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.86842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.87042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.87342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.87742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.88142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.88442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.88742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.89042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.89342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.89642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.89842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.90142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.90342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.90542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.90642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.90942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.91142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.91242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.91442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.91842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.92142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.92342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.92642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.93042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.93442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.93742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.93942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.94342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.94642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.94942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.95142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.95442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.95742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.95942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.96242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.96442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.96542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.96642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.96742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.96842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.96942, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97042, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97142, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97242, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97342, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97442, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97542, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97642, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97742, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.001)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.002)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.005)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.008)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.011)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.015)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.018)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.022)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.023)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.025)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.027)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.026)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.025)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.024)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.023)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.021)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0.02)
+	bpy.ops.mesh.inset(thickness=0.97842, depth=0)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=12)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=14)
+	bpy.ops.mesh.loop_select(delimit_edge_loop={'OUTER_CORNERS'}, object_index=0, edge_index=14)
+	bpy.ops.mesh.loop_select(delimit_edge_loop={'OUTER_CORNERS'}, object_index=0, edge_index=14)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.object.editmode_toggle()
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.context.region.active_panel_category = 'View'
+	bpy.ops.object.editmode_toggle()
+	bpy.context.region.active_panel_category = 'View'
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.sculpt.sculptmode_toggle()
+	bpy.ops.sculpt.sculptmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.transform.translate(value=(-1, 1, 0), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=True, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.object.editmode_toggle()
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.transform.translate(value=(-1, -0, -0), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(True, False, False), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=True, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.translate(value=(-0.999663, 0.00818391, -0.024645), orient_type='VIEW', orient_matrix=((-0.999663, -0.0259683, 0), (0.00818391, -0.315044, 0.949042), (-0.024645, 0.948722, 0.31515)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=True, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.context.scene.tool_settings.use_snap = False
+	bpy.ops.transform.translate(value=(-0, -0, -0.08025), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.translate(value=(-0, -0, -0.0108704), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.transform.translate(value=(0, 0.0706229, 0), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, True, False), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.transform.translate(value=(0, 0, 0.00150957), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=True, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.ops.material.new()
+	bpy.context.object.active_material = bpy.data.materials[-1]
+	bpy.ops.image.open(filepath="//..\\..\\Blender\\Textures\\Poliigon_WoodVeneerOak_7760\\8K\\Poliigon_WoodVeneerOak_7760_Metallic.jpg", directory="//..\\..\\Blender\\Textures\\Poliigon_WoodVeneerOak_7760\\8K\\", files=[{"name":"Poliigon_WoodVeneerOak_7760_Metallic.jpg", "name":"Poliigon_WoodVeneerOak_7760_Metallic.jpg"}], relative_path=True, show_multiview=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=3, face_index=4)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.context.object.data.energy = 342.3
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.ops.transform.rotate(value=-1.42247, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=1.6342, orient_axis='Z', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-1.08876, orient_axis='X', orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(True, False, False), mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-0.476619, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.919135, -0.393943, 9.38773e-07), (0.150121, -0.350256, 0.924546), (-0.364217, 0.849782, 0.381072)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.rotate(value=-0.249374, orient_axis='Z', orient_type='VIEW', orient_matrix=((-0.889417, 0.457097, 8.79169e-07), (-0.239512, -0.466043, 0.851726), (0.389322, 0.75754, 0.523987)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.context.scene.cursor.rotation_euler[0] = 0
+	bpy.context.scene.cursor.rotation_euler[2] = 0
+	bpy.ops.ui.reset_default_button(all=True)
+	bpy.context.scene.cursor.rotation_euler[1] = 0
+	bpy.context.region.active_panel_category = 'Tool'
+	bpy.context.region.active_panel_category = 'Animation'
+	bpy.context.region.active_panel_category = 'Item'
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.context.object.rotation_euler[0] = 0
+	bpy.context.object.rotation_euler[1] = 0
+	bpy.ops.transform.translate(value=(-0.0193817, -0.122751, 0), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.ops.transform.resize(value=(34.7647, 34.7647, 34.7647), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.delete(use_global=False, confirm=False)
+	bpy.ops.object.delete(use_global=False, confirm=False)
+	bpy.ops.mesh.primitive_plane_add(enter_editmode=False, align='WORLD', location=(0, 0, 0), scale=(1, 1, 1))
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Plane.002']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Plane.002']
+	bpy.ops.transform.resize(value=(5.34411, 5.34411, 5.34411), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.mesh.primitive_cube_add(enter_editmode=False, align='WORLD', location=(0, 0, 0), scale=(1, 1, 1))
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.delete(type='FACE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.transform.resize(value=(1, 1, 0.699732), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.transform.translate(value=(0, 0, 0.969309), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.transform.resize(value=(23.9549, 23.9549, 23.9549), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.object.editmode_toggle()
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.context. = True
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.mesh.delete(type='EDGE')
+	bpy.ops.mesh.delete(type='EDGE')
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.context. = False
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=10)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=7)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=10)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=10)
+	bpy.ops.mesh.loop_select(object_index=0, edge_index=10)
+	bpy.ops.mesh.edge_rotate(use_ccw=False)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='VERT')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.transform.resize(value=(1, 1, 0.394395), orient_type='LOCAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='LOCAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.resize(value=(7.03153, 7.03153, 7.03153), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.translate(value=(0.0385825, -6.84275e-07, 5.09289), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.transform.translate(value=(0, 0, 0.0475801), orient_type='GLOBAL', orient_matrix=((1, 0, 0), (0, 1, 0), (0, 0, 1)), orient_matrix_type='GLOBAL', constraint_axis=(False, False, True), mirror=True, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=2, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=3, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=4, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=5, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=6, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=7, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=8, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=9, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=10, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=11, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=12, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=13, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=14, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=15, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=16, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=17, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=18, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=19, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=20, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=21, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=22, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=23, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=24, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=25, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=26, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=27, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=26, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=25, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=24, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=23, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=22, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=21, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=20, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=19, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=18, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=17, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=16, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=15, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=14, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=13, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=12, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=13, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=14, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=15, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=16, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=17, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=18, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.11734, offset_pct=0, segments=19, affect='EDGES')
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=18, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=17, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=16, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=15, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=14, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=13, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=12, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=11, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=10, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=9, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=8, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=7, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=6, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=5, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=4, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=3, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=2, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=2, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=3, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=4, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=5, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=6, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=7, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=9, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=15, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=20, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=28, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=34, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=41, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=49, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=54, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=60, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=63, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=65, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=67, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=69, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=70, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=71, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=72, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=73, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=74, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=75, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=76, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=77, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=78, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=79, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=80, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=81, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=82, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=83, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=85, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=86, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=87, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=88, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=89, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=90, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=91, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=92, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=93, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=94, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=95, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=96, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=97, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=98, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=99, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=100, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=99, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=98, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=95, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=92, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=90, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=89, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=88, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=87, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=85, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=83, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=80, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=76, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=71, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=67, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=62, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=56, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=51, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=48, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=44, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=40, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=37, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=31, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=27, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=21, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=17, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=13, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=8, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=4, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.50103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.53103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.55103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.59103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.64103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.67103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.72103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.75103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.79103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.83103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.87103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.90103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.92103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.94103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.95103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.98103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=2.00103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=2.01103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=2.00103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.97103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.95103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.93103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.91103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.88103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.86103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.83103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.80103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.79103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.78103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.76103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.74103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.72103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.71103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.68103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.67103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.64103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.62103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.60103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.58103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.55103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.52103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.50103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.49103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.45103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.43103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.41103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.39103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.38103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.37103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.36103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.35103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.34103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.33103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.32103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.31103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.30103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.29103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.27103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.24103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.23103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.22103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.19103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.18103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.17103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.16103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.15103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.14103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=2, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=3, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=5, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=7, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=8, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=9, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=10, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.506494, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.519481, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.538961, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.551948, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.564935, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.571429, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.577922, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.590909, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.597403, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.603896, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.61039, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.616883, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.623377, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.62987, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.636364, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.649351, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.655844, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.668831, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.681818, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.688312, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.694805, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.701299, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.707792, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.701299, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.681818, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.675325, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.662338, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.655844, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.649351, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.642857, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.636364, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.642857, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.655844, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.675325, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.688312, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.694805, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.707792, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.714286, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.720779, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.727273, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.746753, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.753247, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.75974, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.766234, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.772727, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.779221, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.785714, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.792208, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.811688, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.831169, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.857143, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.883117, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.902597, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.922078, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.935065, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.948052, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.961039, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.974026, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.987013, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=1, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.987013, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.954545, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.922078, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.915584, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.909091, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.902597, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.896104, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.88961, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.876623, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.87013, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.857143, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.844156, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.818182, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.798701, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.772727, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.75974, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.720779, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.707792, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.701299, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.694805, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.701299, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.707792, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.714286, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.727273, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES')
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=0)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=1)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=2)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=3)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=4)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=5)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=6)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=7)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=8)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=9)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=10)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=11)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=12)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=13)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=14)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=15)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=16)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=17)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=16)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=14)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=11)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=9)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=8)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=7)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=6)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=5)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=4)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=3)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=2)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=1)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=0)
+	bpy.ops.mesh.bevel(offset=1.13103, offset_pct=0, segments=11, profile=0.733766, affect='EDGES', material=-1)
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.mesh.bevel(offset=0.610338, offset_pct=0, affect='EDGES')
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.material.new()
+	bpy.context.object.active_material = bpy.data.materials[-1]
+	bpy.ops.image.open(filepath="//..\\..\\Blender\\Textures\\Poliigon_WoodVeneerOak_7760\\8K\\Poliigon_WoodVeneerOak_7760_Metallic.jpg", directory="//..\\..\\Blender\\Textures\\Poliigon_WoodVeneerOak_7760\\8K\\", files=[{"name":"Poliigon_WoodVeneerOak_7760_Metallic.jpg", "name":"Poliigon_WoodVeneerOak_7760_Metallic.jpg"}], relative_path=True, show_multiview=False)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='FACE')
+	bpy.ops.mesh.select_mode(use_extend=False, use_expand=False, type='EDGE')
+	bpy.ops.mesh.edge_face_add()
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.context.object.data.exposure = 0.176991
+	bpy.context.object.data.energy = 347.3
+	bpy.context.object.data.type = 'SUN'
+	bpy.context.object.data.type = 'POINT'
+	bpy.context.object.data.type = 'SPOT'
+	bpy.context.object.data.type = 'POINT'
+	bpy.context.object.data.type = 'AREA'
+	bpy.context.object.data.type = 'POINT'
+	bpy.context.object.data.exposure = 0.530973
+	bpy.context.object.data.energy = 213.9
+	bpy.context.object.data.diffuse_factor = 1
+	bpy.context.object.data.specular_factor = 0.752212
+	bpy.context.object.data.transmission_factor = 1
+	bpy.context.object.data.volume_factor = 1
+	bpy.context.object.data.shadow_soft_size = 1.39
+	bpy.context.object.data.shadow_soft_size = 0
+	bpy.context.object.data.shadow_soft_size = 0.01
+	bpy.context.object.data.shadow_soft_size = 0.02
+	bpy.context.object.data.shadow_soft_size = 0.03
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.context.object.data.type = 'SUN'
+	bpy.context.object.data.type = 'SPOT'
+	bpy.context.object.data.normalize = False
+	bpy.context.object.data.normalize = True
+	bpy.context.object.data.shadow_soft_size = 0.08
+	bpy.context.object.data.exposure = 2.12389
+	bpy.ops.transform.rotate(value=-0.199369, orient_axis='Z', orient_type='VIEW', orient_matrix=((0.844073, 0.536229, -0), (-0.0558877, 0.0879724, 0.994554), (0.533309, -0.839476, 0.104224)), orient_matrix_type='VIEW', mirror=False, use_proportional_edit=False, proportional_edit_falloff='SPHERE', proportional_size=0.0113382, use_proportional_connected=False, use_proportional_projected=False, snap=False, snap_elements={'INCREMENT'}, use_snap_project=False, snap_target='CLOSEST', use_snap_self=True, use_snap_edit=True, use_snap_nonedit=True, use_snap_selectable=False)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.context.object.data.type = 'POINT'
+	bpy.context.object.data.exposure = 3.71681
+	bpy.context.object.data.energy = 154
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Spot']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Spot']
+	bpy.context.object.data.shadow_soft_size = 0.02
+	bpy.context.object.data.shadow_soft_size = 0.01
+	bpy.context.object.data.shadow_soft_size = 0.02
+	bpy.context.object.data.shadow_soft_size = 0.03
+	bpy.context.object.data.shadow_soft_size = 0.04
+	bpy.context.object.data.use_shadow = False
+	bpy.context.object.data.use_shadow = True
+	bpy.context.object.data.energy = 153.9
+	bpy.context.object.data.energy = 153.8
+	bpy.context.object.data.energy = 153.7
+	bpy.context.object.data.energy = 153.6
+	bpy.context.object.data.energy = 153.5
+	bpy.context.object.data.energy = 153.4
+	bpy.context.object.data.energy = 153.3
+	bpy.context.object.data.energy = 153.2
+	bpy.context.object.data.energy = 153.1
+	bpy.context.object.data.energy = 153
+	bpy.context.object.data.energy = 89.1002
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.context.region.active_panel_category = 'Animation'
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Caps.001']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Caps.001']
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.context.region.active_panel_category = 'Item'
+	bpy.context.region.active_panel_category = 'Animation'
+	bpy.ops.object.copy_global_transform()
+	bpy.context.region.active_panel_category = 'Item'
+	bpy.context.region.active_panel_category = 'Item'
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Camera']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Camera']
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Camera']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Camera']
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Camera']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Camera']
+	bpy.context.object.location[1] = -0.532755
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Cube']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Cube']
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.outliner.item_activate(deselect_all=True)
+	bpy.ops.object.editmode_toggle()
+	bpy.ops.view3d.pastebuffer()
+	[obj.select_set(False) for obj in bpy.context.view_layer.objects.selected.values()]
+	[bpy.context.view_layer.objects.get(obj).select_set(True) for obj in ['Camera']]
+	bpy.context.view_layer.objects.active = bpy.data.objects['Camera']
+	bpy.context.region.active_panel_category = 'View'
+	bpy.context.region.active_panel_category = 'Item'
+	bpy.context.region.active_panel_category = 'Tool'
