@@ -4206,3 +4206,4 @@
 	bpy.context.region.active_panel_category = 'View'
 	bpy.context.region.active_panel_category = 'Item'
 	bpy.context.region.active_panel_category = 'Tool'
+	bpy.ops.marker.move(frames=3, tweak=True)
